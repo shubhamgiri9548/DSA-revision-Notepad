@@ -1,16 +1,82 @@
-# React + Vite
+🧠 DSA Revision Notepad
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple and efficient web app to organize and revise DSA questions by topic.
+You can add, edit, and delete questions for categories like Arrays, Strings, Dynamic Programming, Linked Lists, and more.
+The app also includes a Revision Mode that helps you revisit your saved questions topic-wise.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+✅ Add Questions by Topic
 
-## React Compiler
+Create questions under categories like Arrays, Strings, Stack, Queue, Linked List, Binary Search, and DP.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Each question includes fields like:
 
-## Expanding the ESLint configuration
+Question Name
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Link
+
+Approach / Notes
+
+✅ Edit & Delete Questions
+
+Easily modify or remove questions anytime.
+
+✅ Revision Mode
+
+Quickly review all your saved questions topic-wise with a single click.
+
+✅ Persistent Data ( localStorage)
+
+Your notes remain available even after a page refresh.
+
+✅ Clean UI with Toast Notifications
+
+Instant feedback on add/edit/delete actions with modern toast pop-ups.
+
+🛠️ Tech Stack
+
+Frontend:
+
+React.js (Vite)
+
+Context API (for global state management)
+
+React Hot Toast (for notifications)
+
+Tailwind CSS (for UI styling)
+
+🧩 Folder Structure
+📁 src
+ ┣ 📂 components
+ ┃ ┣ Navbar.jsx
+ ┃ ┣ Sidebar.jsx
+ ┃ ┣ MainArea.jsx
+ ┃ ┗ AddQuestionModal.jsx
+ ┣ 📂 context
+ ┃ ┗ NotebookContext.jsx
+ ┣ App.jsx
+ ┗ main.jsx
+
+🧠 How to Use
+
+Select a Topic from the sidebar (like Arrays, Strings, etc.)
+
+Add a New Question with details like name, link, and approach
+
+View or Edit your existing questions
+
+Click on “Revision Mode” to go through your saved questions again
+
+⚙️ Installation and Setup
+# 1️⃣ Clone the repository
+git clone https://github.com/your-username/dsa-revision-notepad.git
+
+# 2️⃣ Move into the project directory
+cd dsa-revision-notepad
+
+# 3️⃣ Install dependencies
+npm install
+
+# 4️⃣ Run the development server
+npm run dev
